@@ -2,19 +2,20 @@ import * as Styled from './Project.styled';
 import UnderlinedText from 'components/atoms/UnderlinedText/UnderlinedText';
 
 interface ProjectProps {
+  as?: string;
   description: string;
   icon: string;
-  link: string;
+  href: string;
   name: string;
 }
 
-export default function Project({ description, icon, link, name }: ProjectProps) {
+export default function Project({ as, description, href, icon, name }: ProjectProps) {
   return (
-    <Styled.Project>
+    <Styled.Project as={as}>
       <Styled.Wrapper>
         <Styled.Icon className={`em em-${icon}`} />
         <Styled.Heading>
-          <UnderlinedText href={link}>{name}</UnderlinedText>
+          <UnderlinedText href={href}>{name}</UnderlinedText>
         </Styled.Heading>
       </Styled.Wrapper>
       <Styled.Description>{description}</Styled.Description>

@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "description": "A familiar styled-like API for css-modules in React",
+      "href": "https://github.com/eels/chic-modules",
+      "icon": "sparkles",
+      "name": "Chic Modules"
+    },
+    {
+      "description": "Visual Studio Code in colours that make me feel okay",
+      "href": "https://github.com/eels/vscode-comfort-theme",
+      "icon": "couch_and_lamp",
+      "name": "Comfort Theme"
+    },
+    {
+      "description": "An OTT configurable particle effects plugin for Hyper",
+      "href": "https://github.com/eels/hyper-unlimited-power",
+      "icon": "tada",
+      "name": "hyper-unlimited-power"
+    },
+    {
+      "description": "Things just the way I like them",
+      "href": "https://github.com/eels/hyper-unlimited-power",
+      "icon": "gear",
+      "name": "dotfiles"
+    }
+  ]
+}

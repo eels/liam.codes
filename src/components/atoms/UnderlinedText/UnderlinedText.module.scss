@@ -3,4 +3,12 @@
   background-position: 0 85%;
   background-repeat: no-repeat;
   background-size: 100% 8px;
+
+  &:is(a) {
+    transition: background-position 0.1s linear;
+
+    &:hover {
+      background-position: 0 98%;
+    }
+  }
 }

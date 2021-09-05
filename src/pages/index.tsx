@@ -4,11 +4,12 @@ import Divider from 'components/atoms/Divider/Divider';
 import Head from 'next/head';
 import Hero from 'components/molecules/Hero/Hero';
 import Intro from 'components/molecules/Intro/Intro';
+import Projects from 'components/molecules/Projects/Projects';
 import React from 'react';
 import seo from 'data/seo.json';
 
 export default function Home() {
-  const sections = [Intro, Contact];
+  const sections = [Intro, Projects, Contact];
 
   return (
     <React.Fragment>

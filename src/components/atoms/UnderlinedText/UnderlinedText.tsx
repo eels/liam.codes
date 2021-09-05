@@ -1,5 +1,6 @@
 import * as Styled from './UnderlinedText.styled';
-import { ReactNode } from 'react';
+import isInternalHref from 'utils/isInternalHref';
+import { ReactNode, useMemo } from 'react';
 
 interface UnderlinedTextProps {
   children: ReactNode;
@@ -7,8 +8,14 @@ interface UnderlinedTextProps {
 }
 
 export default function UnderlinedText({ children, href }: UnderlinedTextProps) {
+  const isExternalHref = useMemo(() => href && !isInternalHref(href), [href]);
+  const additionalProps = {
+    rel: isExternalHref ? 'noopener noreferrer' : undefined,
+    target: isExternalHref ? '_blank' : undefined,
+  };
+
   return (
-    <Styled.Text as={href ? 'a' : null} href={href ?? undefined}>
+    <Styled.Text as={href ? 'a' : null} href={href ?? undefined} {...additionalProps}>
       {children}
     </Styled.Text>
   );
