@@ -1,7 +1,7 @@
 {
   "name": "liam.codes",
   "private": true,
-  "description": "Source for the personal website, https://liam.codes",
+  "description": "Source for my personal website, https://liam.codes",
   "author": "Liam Howell <liam@liam.codes>",
   "homepage": "https://liam.codes",
   "repository": "https://github.com/eels/liam.codes",
@@ -13,16 +13,20 @@
     "export": "next export",
     "format": "prettier './{src,test}/**/*.{ts,tsx}' --check",
     "format:fix": "yarn format --write",
-    "lint": "eslint './{src,test}/**/*.{ts,tsx}'",
-    "lint:fix": "yarn lint --fix",
+    "lint": "yarn lint:css && yarn lint:js",
+    "lint:css": "stylelint './src/**/*.scss'",
+    "lint:css:fix": "yarn lint:css --fix",
+    "lint:js": "eslint './{src,test}/**/*.{ts,tsx}'",
+    "lint:js:fix": "yarn lint:js --fix",
     "test": "jest --coverage --passWithNoTests"
   },
   "browserslist": [
     "defaults"
   ],
   "dependencies": {
-    "chic-modules": "^0.3.0",
+    "chic-modules": "^0.3.1",
     "next": "^11.1.2",
+    "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -59,6 +63,12 @@
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
     "sass": "^1.39.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-recommended-scss": "^4.3.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.20.0",
     "typescript": "^4.4.2"
   }
 }

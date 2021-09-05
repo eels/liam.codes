@@ -1,0 +1,10 @@
+.wrapper {
+  min-height: 100vh;
+  background-color: $gradient--stop1;
+  background-image: linear-gradient(
+    90deg,
+    $gradient--stop1 0%,
+    $gradient--stop2 36%,
+    $gradient--stop3 100%
+  );
+}
