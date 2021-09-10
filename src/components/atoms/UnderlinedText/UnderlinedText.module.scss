@@ -6,6 +6,7 @@
 
   &:is(a) {
     transition: background-position 0.1s linear;
+    will-change: background-position;
 
     &:hover {
       background-position: 0 98%;

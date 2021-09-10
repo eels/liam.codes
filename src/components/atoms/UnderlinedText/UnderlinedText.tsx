@@ -7,12 +7,19 @@ interface UnderlinedTextProps {
   href?: string;
 }
 
+interface AdditionalLinkProps {
+  rel?: string;
+  target?: string;
+}
+
 export default function UnderlinedText({ children, href }: UnderlinedTextProps) {
-  const isExternalHref = useMemo(() => href && !isInternalHref(href), [href]);
-  const additionalProps = {
-    rel: isExternalHref ? 'noopener noreferrer' : undefined,
-    target: isExternalHref ? '_blank' : undefined,
-  };
+  const isExternalHref = useMemo<boolean>(() => !!href && !isInternalHref(href), [href]);
+  const additionalProps: AdditionalLinkProps = {};
+
+  if (isExternalHref) {
+    additionalProps.rel = 'noopener noreferrer';
+    additionalProps.target = '_blank';
+  }
 
   return (
     <Styled.Text as={href ? 'a' : null} href={href ?? undefined} {...additionalProps}>
