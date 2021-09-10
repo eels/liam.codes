@@ -12,12 +12,12 @@ interface ProjectProps {
 export default function Project({ as, description, href, icon, name }: ProjectProps) {
   return (
     <Styled.Project as={as}>
-      <Styled.Wrapper>
+      <Styled.Header>
         <Styled.Icon className={`em em-${icon}`} />
         <Styled.Heading>
           <UnderlinedText href={href}>{name}</UnderlinedText>
         </Styled.Heading>
-      </Styled.Wrapper>
+      </Styled.Header>
       <Styled.Description>{description}</Styled.Description>
     </Styled.Project>
   );

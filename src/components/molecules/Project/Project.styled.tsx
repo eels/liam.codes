@@ -5,7 +5,7 @@ const styled = create(styles);
 
 export const Project = styled.div('project');
 
-export const Wrapper = styled.div('wrapper');
+export const Header = styled.div('header');
 
 export const Heading = styled.h3('heading');
 

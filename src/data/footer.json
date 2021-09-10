@@ -1,0 +1,21 @@
+{
+  "content": [
+    {
+      "paragraph": "Feel free to reach out by sending an Email, or by connecting on LinkedIn.",
+      "underline": [
+        {
+          "props": {
+            "href": "mailto:liam@liam.codes"
+          },
+          "target": "Email"
+        },
+        {
+          "props": {
+            "href": "https://www.linkedin.com/in/liamdoescode/"
+          },
+          "target": "LinkedIn"
+        }
+      ]
+    }
+  ]
+}

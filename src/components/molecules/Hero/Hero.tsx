@@ -1,10 +1,17 @@
 import * as Styled from './Hero.styled';
 
-export default function Hero() {
+interface HeroProps {
+  content: {
+    heading: string;
+    subheading: string;
+  };
+}
+
+export default function Hero({ content }: HeroProps) {
   return (
-    <Styled.Wrapper>
-      <Styled.Heading>Liam Howell</Styled.Heading>
-      <Styled.Subheading>making web things</Styled.Subheading>
-    </Styled.Wrapper>
+    <Styled.Header>
+      <Styled.Heading>{content.heading}</Styled.Heading>
+      <Styled.Subheading>{content.subheading}</Styled.Subheading>
+    </Styled.Header>
   );
 }
