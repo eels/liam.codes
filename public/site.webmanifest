@@ -3,9 +3,10 @@
   "short_name": "Liam Howell",
   "description": "Liam Howell is an experienced full-stack engineer based in London.",
   "lang": "en-GB",
+  "start_url": "/",
   "theme_color": "#f15d5d",
   "background_color": "#f15d5d",
-  "display": "browser",
+  "display": "standalone",
   "icons": [
     {
       "sizes": "192x192",
