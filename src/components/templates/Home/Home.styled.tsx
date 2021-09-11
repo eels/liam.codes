@@ -1,5 +1,5 @@
 import create from 'chic-modules';
-import styles from './index.module.scss';
+import styles from './Home.module.scss';
 
 const styled = create(styles);
 
