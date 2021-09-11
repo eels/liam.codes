@@ -40,7 +40,16 @@
   "rules": {
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-use-before-define": ["error"],
-    "comma-dangle": ["error", "always-multiline"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline",
+        "imports": "always-multiline",
+        "objects": "always-multiline"
+      }
+    ],
     "import/first": "error",
     "import/newline-after-import": [
       "error",

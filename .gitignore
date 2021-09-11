@@ -43,3 +43,4 @@ yarn.lock
 /.next
 /coverage
 /out
+/public/service-worker.js
