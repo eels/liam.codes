@@ -1,8 +1,8 @@
 {
   "extends": [
-    "stylelint-config-recommended-scss",
     "stylelint-config-idiomatic-order",
-    "stylelint-config-standard"
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss"
   ],
   "rules": {
     "at-rule-no-vendor-prefix": true,

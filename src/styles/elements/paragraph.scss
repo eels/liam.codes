@@ -3,7 +3,7 @@ p {
   font-size: 24px;
   line-height: 1.3;
 
-  @media screen and (min-width: 768px) {
+  @include mq() {
     font-size: 36px;
   }
 

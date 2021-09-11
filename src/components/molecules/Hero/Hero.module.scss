@@ -8,7 +8,7 @@
   justify-content: center;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @include mq() {
     height: 75vh;
   }
 }
@@ -17,7 +17,7 @@
   font-size: 32px;
   font-weight: 700;
 
-  @media screen and (min-width: 768px) {
+  @include mq() {
     font-size: 62px;
   }
 }
@@ -26,7 +26,7 @@
   font-size: 24px;
   font-weight: 400;
 
-  @media screen and (min-width: 768px) {
+  @include mq() {
     font-size: 42px;
   }
 }
