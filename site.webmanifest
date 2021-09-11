@@ -1,0 +1,22 @@
+{
+  "name": "Liam Howell | Full-Stack Engineer, London",
+  "short_name": "Liam Howell",
+  "description": "Liam Howell is an experienced full-stack engineer based in London.",
+  "lang": "en-GB",
+  "theme_color": "#f15d5d",
+  "background_color": "#f15d5d",
+  "display": "browser",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "src": "/android-chrome-192x192.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "/android-chrome-512x512.png",
+      "type": "image/png"
+    }
+  ]
+}
