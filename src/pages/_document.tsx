@@ -8,6 +8,7 @@ class MyDocument extends Document {
           <meta httpEquiv='x-ua-compatible' content='ie=edge' />
           <meta name='robots' content='index,follow,noimageindex' />
           <link rel='canonical' href='https://liam.codes' />
+          <link rel='author' href='/humans.txt' type='text/plain' />
           <link rel='preconnect dns-prefetch' href='//emoji-css.afeld.me' />
           <link rel='preconnect dns-prefetch' href='//fonts.googleapis.com' />
           <link rel='preconnect dns-prefetch' href='//fonts.gstatic.com' />
