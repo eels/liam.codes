@@ -1,0 +1,12 @@
+.spacer {
+  padding-bottom: 20px;
+}
+
+.link {
+  font-size: 18px;
+  line-height: 1.3;
+
+  @include mq() {
+    font-size: 24px;
+  }
+}

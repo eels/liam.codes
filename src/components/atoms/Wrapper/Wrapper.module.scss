@@ -1,5 +1,8 @@
 .wrapper {
+  display: flex;
   min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
   background-color: $gradient--stop1;
   background-image: linear-gradient(
     90deg,
