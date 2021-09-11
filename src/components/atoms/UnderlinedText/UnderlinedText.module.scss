@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: 100% 8px;
 
-  &:is(a) {
+  @include for-element(&, a) {
     transition: background-position 0.1s linear;
     will-change: background-position;
 
