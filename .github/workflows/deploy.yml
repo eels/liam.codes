@@ -40,9 +40,8 @@ jobs:
           restore-keys: ${{ runner.os }}-${{ steps.workflow-vars.outputs.branch }}-yarn-
 
       - name: Install Dependencies
-        if: ${{ steps.yarn-cache.outputs.cache-hit != 'true' }}
         run: |
-          yarn install
+          yarn install --frozen-lockfile --prefer-offline
 
       - name: Build
         run: |
