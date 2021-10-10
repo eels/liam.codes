@@ -4,6 +4,7 @@
     "stylelint-config-standard",
     "stylelint-config-recommended-scss"
   ],
+
   "rules": {
     "at-rule-no-vendor-prefix": true,
     "declaration-colon-newline-after": null,
