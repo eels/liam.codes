@@ -1,8 +1,8 @@
 .header {
   display: flex;
-  height: 65vh;
-  min-height: 400px;
-  max-height: 500px;
+  height: 55vh;
+  min-height: 375px;
+  max-height: 450px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -10,6 +10,8 @@
 
   @include mq() {
     height: 75vh;
+    min-height: 400px;
+    max-height: 500px;
   }
 }
 
