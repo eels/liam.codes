@@ -36,6 +36,12 @@ package-lock.json
 .env
 !.env.example
 
+# Caches
+# ----------------------------------------
+
+.eslintcache
+.stylelintcache
+
 # Compiled resources
 # ----------------------------------------
 
