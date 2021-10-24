@@ -1841,15 +1841,16 @@ character-reference-invalid@^1.0.0:
   resolved "https://registry.yarnpkg.com/character-reference-invalid/-/character-reference-invalid-1.1.4.tgz#083329cda0eae272ab3dbbf37e9a382c13af1560"
   integrity sha512-mKKUkUbhPpQlCOfIuZkvSEgktjPFIsZKRRbC6KWVEMvlzblj3i3asQv5ODsrwt0N3pHAEvjP8KTQPHkp0+6jOg==
 
-chic-modules@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/chic-modules/-/chic-modules-0.3.1.tgz#8a853d41e40c5309838b48b26f61798010b22b49"
-  integrity sha512-r7e5PDRF7f6HbWnK9LvGqU/C7QqRbpAyImEP6nO4wIOvxXfNWOJ8m8/9RqpwO3FdV/Ym0+CdgfliHP7mbsKUPw==
+chic-modules@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/chic-modules/-/chic-modules-1.0.1.tgz#de7c90375075efc39701bbdd2eea5363388273d2"
+  integrity sha512-1CwXaCIVmsEDEdBoiJZdClqdT+DTfh7BpwKmGhI/01eSWXdEyoQ/gxfWcv6H4uWHmAJ2RyGltZ6dxUekICvyJA==
   dependencies:
     "@emotion/is-prop-valid" "^1.1.0"
     classcat "^5.0.3"
     react "^17.0.2"
     react-dom "^17.0.2"
+    style-vendorizer "^2.1.1"
 
 chokidar@3.5.1:
   version "3.5.1"
@@ -6231,6 +6232,11 @@ style-search@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
   integrity sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
+
+style-vendorizer@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/style-vendorizer/-/style-vendorizer-2.1.1.tgz#5f06601c1724cfb314fe1153e7e442c58dde771c"
+  integrity sha512-gVO6Cwxtg8iX0X1W4xMhSc5WbQpiIBQDkhq3JkwebMRRgyhCfuvMrnPlTAGTRjfQPGRmzgjCOZ4drehTnLahHA==
 
 styled-jsx@4.0.1:
   version "4.0.1"
