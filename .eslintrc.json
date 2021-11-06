@@ -5,7 +5,6 @@
     "plugin:import/typescript",
     "plugin:jest-dom/recommended",
     "plugin:react/recommended",
-    "next/core-web-vitals",
     "standard",
     "semistandard"
   ],
@@ -48,9 +47,11 @@
         "count": 1
       }
     ],
+    "import/no-unresolved": "off",
     "no-unused-vars": "off",
     "no-use-before-define": "off",
     "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off",
     "sort-destructure-keys/sort-destructure-keys": [
       "error",
       {

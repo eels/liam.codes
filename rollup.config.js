@@ -4,6 +4,7 @@ const { terser } = require('rollup-plugin-terser');
 
 module.exports = {
   input: 'src/service-worker.ts',
+
   output: {
     dir: 'public/',
     format: 'iife',
@@ -14,6 +15,7 @@ module.exports = {
       'workbox-strategies': 'workboxStrategies',
     },
   },
+
   plugins: [
     replace({
       preventAssignment: true,
