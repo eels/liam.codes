@@ -18,6 +18,7 @@
     "lint:css:fix": "yarn lint:css --fix",
     "lint:js": "eslint './{src,test}/**/*.{ts,tsx}' --cache",
     "lint:js:fix": "yarn lint:js --fix",
+    "prepare": "husky install",
     "test": "jest --coverage --passWithNoTests"
   },
   "browserslist": [
