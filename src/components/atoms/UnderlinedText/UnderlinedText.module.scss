@@ -2,7 +2,11 @@
   background-image: linear-gradient(0deg, rgba($white, 0.5) 0%, rgba($white, 0.5) 100%);
   background-position: 0 85%;
   background-repeat: no-repeat;
-  background-size: 100% 8px;
+  background-size: 100% 5px;
+
+  @include mq() {
+    background-size: 100% 8px;
+  }
 
   @include for-element(&, a) {
     transition: background-position 0.1s linear;
