@@ -7,6 +7,12 @@
       "name": "Chic Modules"
     },
     {
+      "description": "Card-based dungeon crawler with monsters, swords and stuff",
+      "href": "https://github.com/eels/dungeon.liam.codes",
+      "icon": "crossed_swords",
+      "name": "Dungeon Delver"
+    },
+    {
       "description": "Visual Studio Code in colours that make me feel okay",
       "href": "https://github.com/eels/vscode-comfort-theme",
       "icon": "couch_and_lamp",
