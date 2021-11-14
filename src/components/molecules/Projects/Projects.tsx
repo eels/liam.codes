@@ -8,6 +8,7 @@ interface ProjectsProps {
     icon: string;
     href: string;
     name: string;
+    source?: string;
   }[];
 }
 

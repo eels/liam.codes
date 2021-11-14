@@ -7,9 +7,10 @@ interface ProjectProps {
   icon: string;
   href: string;
   name: string;
+  source?: string;
 }
 
-export default function Project({ as, description, href, icon, name }: ProjectProps) {
+export default function Project({ as, description, href, icon, name, source }: ProjectProps) {
   return (
     <Styled.Project as={as}>
       <Styled.Header>
@@ -19,6 +20,11 @@ export default function Project({ as, description, href, icon, name }: ProjectPr
         </Styled.Heading>
       </Styled.Header>
       <Styled.Description>{description}</Styled.Description>
+      {source && (
+        <Styled.ViewSource>
+          <UnderlinedText href={source}>View Source on GitHub</UnderlinedText>
+        </Styled.ViewSource>
+      )}
     </Styled.Project>
   );
 }

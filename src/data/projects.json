@@ -8,9 +8,10 @@
     },
     {
       "description": "Card-based dungeon crawler with monsters, swords and stuff",
-      "href": "https://github.com/eels/dungeon.liam.codes",
+      "href": "https://dungeon.liam.codes",
       "icon": "crossed_swords",
-      "name": "Dungeon Delver"
+      "name": "Dungeon Delver",
+      "source": "https://github.com/eels/dungeon.liam.codes"
     },
     {
       "description": "Visual Studio Code in colours that make me feel okay",

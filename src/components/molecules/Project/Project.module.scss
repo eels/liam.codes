@@ -45,3 +45,14 @@
     font-size: 28px;
   }
 }
+
+.view-source {
+  display: block;
+  padding-top: 20px;
+  font-size: 20px;
+
+  @include mq() {
+    display: inline-block;
+    font-size: 28px;
+  }
+}
