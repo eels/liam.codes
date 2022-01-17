@@ -21,9 +21,10 @@
     },
     {
       "description": "Visual Studio Code in colours that make me feel okay",
-      "href": "https://github.com/eels/vscode-comfort-theme",
+      "href": "https://marketplace.visualstudio.com/items?itemName=eels.vscode-comfort-theme",
       "icon": "couch_and_lamp",
-      "name": "Comfort Theme"
+      "name": "Comfort Theme",
+      "source": "https://github.com/eels/vscode-comfort-theme"
     },
     {
       "description": "An OTT configurable particle effects plugin for Hyper",
