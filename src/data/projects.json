@@ -14,6 +14,12 @@
       "source": "https://github.com/eels/dungeon.liam.codes"
     },
     {
+      "description": "Easily remove unused css-module code in Next.js builds",
+      "href": "https://github.com/eels/next-purge-css-modules",
+      "icon": "construction_worker",
+      "name": "next-purge-css-modules"
+    },
+    {
       "description": "Visual Studio Code in colours that make me feel okay",
       "href": "https://github.com/eels/vscode-comfort-theme",
       "icon": "couch_and_lamp",
