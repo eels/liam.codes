@@ -1,6 +1,12 @@
 const path = require('path');
+const withPurgeCSSModules = require('next-purge-css-modules');
 
-module.exports = {
+module.exports = withPurgeCSSModules({
+  purgeCSSModules: {
+    content: path.join(__dirname, 'src/**/*.{ts,tsx}'),
+    enableDevPurge: true,
+  },
+
   reactStrictMode: true,
 
   sassOptions: {
@@ -9,4 +15,4 @@ module.exports = {
   },
 
   swcMinify: true,
-};
+});
