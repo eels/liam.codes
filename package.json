@@ -69,7 +69,7 @@
     "lint-staged": "^12.3.5",
     "next-purge-css-modules": "^1.0.1",
     "prettier": "^2.5.1",
-    "rollup": "^2.67.1",
+    "rollup": "^2.70.1",
     "rollup-plugin-terser": "^7.0.2",
     "sass": "^1.49.8",
     "stylelint": "^14.5.1",
