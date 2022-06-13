@@ -71,7 +71,7 @@
     "prettier": "^2.6.2",
     "rollup": "^2.75.3",
     "rollup-plugin-terser": "^7.0.2",
-    "sass": "^1.50.1",
+    "sass": "^1.52.3",
     "stylelint": "^14.7.1",
     "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-recommended-scss": "^5.0.2",
