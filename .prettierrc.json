@@ -1,17 +1,28 @@
 {
   "arrowParens": "always",
-
   "bracketSpacing": true,
-
   "jsxSingleQuote": true,
-
+  "pluginSearchDirs": false,
   "printWidth": 100,
-
+  "quoteProps": "consistent",
   "semi": true,
-
   "singleQuote": true,
-
   "trailingComma": "all",
 
-  "quoteProps": "consistent"
+  "overrides": [
+    {
+      "files": "**/styled.ts",
+      "options": {
+        "multilineArraysWrapThreshold": 0,
+        "plugins": ["@prettier/multiline-arrays"]
+      }
+    },
+    {
+      "files": "**/*.astro",
+      "options": {
+        "astroAllowShorthand": false,
+        "plugins": ["prettier-plugin-astro"]
+      }
+    }
+  ]
 }

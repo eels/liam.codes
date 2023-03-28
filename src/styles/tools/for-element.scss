@@ -1,5 +1,0 @@
-@mixin for-element($context, $element) {
-  @at-root #{$element}#{$context} {
-    @content;
-  }
-}

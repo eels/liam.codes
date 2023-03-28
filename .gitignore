@@ -1,16 +1,13 @@
-# Packages
-# ----------------------------------------
+# --- Packages ----------------------------------
 
 *.tar
 *.zip
 
-# Logs
-# ----------------------------------------
+# --- Logs --------------------------------------
 
 *.log
 
-# OS generated files
-# ----------------------------------------
+# --- OS generated files ------------------------
 
 .DS_Store
 .DS_Store?
@@ -20,32 +17,24 @@
 ehthumbs.db
 Thumbs.db
 
-# NPM Lock files
-# ----------------------------------------
+# --- NPM Lock file -----------------------------
 
 package-lock.json
 
-# Dependencies
-# ----------------------------------------
+# --- Dependencies ------------------------------
 
-/node_modules
+node_modules
 
-# Secrets
-# ----------------------------------------
+# --- Secrets -----------------------------------
 
 .env
 !.env.example
 
-# Caches
-# ----------------------------------------
+# --- Caches ------------------------------------
 
 .eslintcache
 .stylelintcache
 
-# Compiled resources
-# ----------------------------------------
+# --- Compiled ----------------------------------
 
-/.next
-/coverage
-/out
-/public/service-worker.js
+dist

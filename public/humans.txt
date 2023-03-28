@@ -3,8 +3,3 @@ Webmaster: Liam Howell
 Contact: liam [at] liam.codes
 Website: https://liam.codes
 From: London, England
-
-/* SITE */
-Last update: 2021/02/17
-Language: English
-Doctype: HTML5

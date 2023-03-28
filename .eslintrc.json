@@ -1,72 +1,31 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:import/recommended",
-    "plugin:import/typescript",
-    "plugin:jest-dom/recommended",
-    "plugin:react/recommended",
     "standard",
-    "semistandard"
+    "semistandard",
+    "./configs/eslint/import.json",
+    "./configs/eslint/prettier.json",
+    "./configs/eslint/sort-destructure-keys.json",
+    "./configs/eslint/sort-imports-es6-autofix.json",
+    "./configs/eslint/sort-keys-fix.json",
+    "./configs/eslint/typescript-sort-keys.json",
+    "./configs/eslint/typescript.json",
+    "./configs/eslint/unicorn.json"
   ],
-
   "env": {
     "browser": true,
-    "es6": true,
-    "jest": true
+    "node": true
   },
-
-  "parser": "@typescript-eslint/parser",
-
-  "plugins": [
-    "@typescript-eslint",
-    "import",
-    "jest-dom",
-    "react",
-    "react-hooks",
-    "prettier",
-    "sort-destructure-keys",
-    "sort-imports-es6-autofix",
-    "sort-keys-fix",
-    "testing-library"
-  ],
-
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
-
   "rules": {
-    "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-use-before-define": ["error"],
     "comma-dangle": ["error", "always-multiline"],
-    "import/first": "error",
-    "import/newline-after-import": [
-      "error",
-      {
-        "count": 1
-      }
-    ],
-    "import/no-unresolved": "off",
+    "comma-spacing": "off",
+    "indent": "off",
+    "newline-after-var": ["error", "always"],
+    "newline-before-return": "error",
+    "no-case-declarations": "off",
     "no-unused-vars": "off",
     "no-use-before-define": "off",
-    "prettier/prettier": "error",
-    "react/react-in-jsx-scope": "off",
-    "sort-destructure-keys/sort-destructure-keys": [
-      "error",
-      {
-        "caseSensitive": true
-      }
-    ],
-    "sort-imports-es6-autofix/sort-imports-es6": [
-      "error",
-      {
-        "ignoreCase": false,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
-      }
-    ],
-    "sort-keys-fix/sort-keys-fix": "error",
+    "one-var": ["error", "never"],
     "space-before-function-paren": [
       "error",
       {
@@ -75,18 +34,14 @@
         "named": "never"
       }
     ],
-    "valid-typeof": [
+    "padding-line-between-statements": [
       "error",
       {
-        "requireStringLiterals": false
+        "blankLine": "never",
+        "next": "import",
+        "prev": "import"
       }
-    ]
-  },
-
-  "overrides": [
-    {
-      "extends": ["plugin:testing-library/react"],
-      "files": ["**/?(*.)+(spec|test).[jt]s?(x)"]
-    }
-  ]
+    ],
+    "quote-props": ["error", "consistent"]
+  }
 }
