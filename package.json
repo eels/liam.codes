@@ -11,9 +11,9 @@
     "build": "astro build",
     "dev": "astro dev",
     "format:fix": "yarn format --write",
-    "format": "prettier './src/**/*.{astro,ts}' --check",
+    "format": "prettier \"{.,./src/**/}*.{astro,js,json,ts}\" --check",
     "lint:js:fix": "yarn lint:js --fix",
-    "lint:js": "eslint './src/**/*.{astro,ts}' --cache",
+    "lint:js": "eslint \"./*.{js,ts}\" \"./src/**/*.{astro,js,json,ts}\" --cache",
     "lint": "yarn lint:js",
     "prepare": "husky install",
     "start": "astro preview"
