@@ -3,6 +3,7 @@
     "eslint:recommended",
     "standard",
     "semistandard",
+    "./configs/eslint/base.json",
     "./configs/eslint/import.json",
     "./configs/eslint/prettier.json",
     "./configs/eslint/sort-destructure-keys.json",
@@ -10,38 +11,11 @@
     "./configs/eslint/sort-keys-fix.json",
     "./configs/eslint/typescript-sort-keys.json",
     "./configs/eslint/typescript.json",
-    "./configs/eslint/unicorn.json"
+    "./configs/eslint/unicorn.json",
+    "./configs/eslint/astro.json"
   ],
   "env": {
     "browser": true,
     "node": true
-  },
-  "rules": {
-    "comma-dangle": ["error", "always-multiline"],
-    "comma-spacing": "off",
-    "indent": "off",
-    "newline-after-var": ["error", "always"],
-    "newline-before-return": "error",
-    "no-case-declarations": "off",
-    "no-unused-vars": "off",
-    "no-use-before-define": "off",
-    "one-var": ["error", "never"],
-    "space-before-function-paren": [
-      "error",
-      {
-        "anonymous": "always",
-        "asyncArrow": "always",
-        "named": "never"
-      }
-    ],
-    "padding-line-between-statements": [
-      "error",
-      {
-        "blankLine": "never",
-        "next": "import",
-        "prev": "import"
-      }
-    ],
-    "quote-props": ["error", "consistent"]
   }
 }
