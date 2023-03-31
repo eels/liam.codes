@@ -1,0 +1,32 @@
+---
+import * as Classes from './styled';
+import { isExternalURL } from '@src/utilities/url';
+
+export interface Props {
+  class?: string;
+  href?: string;
+}
+
+interface AdditionalLinkProps {
+  rel?: string;
+  target?: string;
+}
+
+const { class: className, href } = Astro.props;
+const additionalLinkProps: AdditionalLinkProps = {};
+
+if (!!href && isExternalURL(href)) {
+  additionalLinkProps.rel = 'noopener noreferrer';
+  additionalLinkProps.target = '_blank';
+}
+
+const Component = href ? 'a' : 'span';
+---
+
+<Component
+  class:list={[Classes.Text({ isLink: href !== undefined }), className]}
+  href={href}
+  {...additionalLinkProps}
+>
+  <slot />
+</Component>

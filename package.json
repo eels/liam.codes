@@ -11,9 +11,9 @@
     "build": "astro build",
     "dev": "astro dev",
     "format:fix": "yarn format --write",
-    "format": "prettier \"{.,./src/**/}*.{astro,js,json,ts}\" --check",
+    "format": "prettier \"{.,./src/**/}*.{astro,cjs,js,json,ts}\" --check",
     "lint:js:fix": "yarn lint:js --fix",
-    "lint:js": "eslint \"./*.{js,ts}\" \"./src/**/*.{astro,js,json,ts}\" --cache",
+    "lint:js": "eslint \"./*.{cjs,js,ts}\" \"./src/**/*.{astro,js,json,ts}\" --cache",
     "lint": "yarn lint:js",
     "prepare": "husky install",
     "start": "astro preview"
@@ -22,7 +22,7 @@
     "defaults"
   ],
   "dependencies": {
-    "@astrojs/tailwind": "3.1.1",
+    "astro-icon": "0.8.0",
     "astro": "2.1.8"
   },
   "devDependencies": {
@@ -32,6 +32,8 @@
     "@types/node": "18.15.10",
     "@typescript-eslint/eslint-plugin": "5.57.0",
     "@typescript-eslint/parser": "5.57.0",
+    "astro-compress": "1.1.35",
+    "autoprefixer": "10.4.14",
     "eslint-config-semistandard": "17.0.0",
     "eslint-config-standard": "17.0.0",
     "eslint-plugin-astro": "0.26.1",
@@ -49,8 +51,12 @@
     "eslint": "8.36.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.0",
+    "postcss": "8.4.21",
     "prettier-plugin-astro": "0.8.0",
     "prettier": "2.8.7",
+    "react": "18.2.0",
+    "svgo": "2.8.0",
+    "tailwind-compose": "0.7.1",
     "tailwindcss": "3.3.0",
     "tsconfig-paths": "4.1.2",
     "typescript": "5.0.2"

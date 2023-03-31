@@ -1,0 +1,15 @@
+---
+import * as Classes from './styled';
+
+export interface Props {
+  heading: string;
+  subheading: string;
+}
+
+const { heading, subheading } = Astro.props;
+---
+
+<header class:list={Classes.Header()}>
+  <h1 class:list={Classes.Heading()}>{heading}</h1>
+  <h2 class:list={Classes.Subheading()}>{subheading}</h2>
+</header>

@@ -1,5 +1,5 @@
 {
-  "{.,./src/**/}*.{astro,js,json,ts}": ["prettier --check"],
-  "./*.{js,ts}": ["eslint --cache"],
+  "{.,./src/**/}*.{astro,cjs,js,json,ts}": ["prettier --check"],
+  "./*.{cjs,js,ts}": ["eslint --cache"],
   "./src/**/*.{astro,js,json,ts}": ["eslint --cache"]
 }

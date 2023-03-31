@@ -1,24 +1,19 @@
 ---
-export interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
+import '@src/styles/style.css';
+import * as Classes from './styled';
+import { Sprite } from 'astro-icon';
 ---
 
 <!DOCTYPE html>
 <html lang='en-GB'>
   <head>
-    <meta http-equiv='x-ua-compatible' content='ie=edge' />
-    <meta name='robots' content='index,follow,noimageindex' />
-    <meta name='application-name' content='Liam Howell' />
-    <meta name='theme-color' content='#f15d5d' />
-    <link rel='canonical' href='https://liam.codes' />
-    <link rel='author' href='/humans.txt' type='text/plain' />
-    <link rel='manifest' href='/site.webmanifest' />
-    <title>{title}</title>
+    <slot name='head' />
   </head>
-  <body>
-    <slot />
+  <body class:list={Classes.Body()}>
+    <div class:list={Classes.Container()}>
+      <Sprite.Provider>
+        <slot />
+      </Sprite.Provider>
+    </div>
   </body>
 </html>

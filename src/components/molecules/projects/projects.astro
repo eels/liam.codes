@@ -1,0 +1,21 @@
+---
+import * as Classes from './styled';
+import Project from '@src/components/molecules/project/project.astro';
+import type { Props as ProjectContent } from '@src/components/molecules/project/project.astro';
+
+export interface Props {
+  content: ProjectContent[];
+}
+
+const { content } = Astro.props;
+---
+
+<ul class:list={Classes.Projects()}>
+  {
+    content.map((project) => (
+      <li class:list={Classes.ListItem()}>
+        <Project {...project} />
+      </li>
+    ))
+  }
+</ul>

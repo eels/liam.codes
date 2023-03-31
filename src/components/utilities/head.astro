@@ -1,0 +1,22 @@
+---
+export interface Props {
+  slot: 'head';
+}
+
+const FONT_PREFIX = 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro';
+---
+
+<meta http-equiv='x-ua-compatible' content='ie=edge' />
+<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
+<meta name='robots' content='index,follow,noimageindex' />
+<meta name='application-name' content='Liam Howell' />
+<meta name='theme-color' content='#f15d5d' />
+<link rel='canonical' href='https://liam.codes' />
+<link rel='author' href='/humans.txt' type='text/plain' />
+<link rel='manifest' href='/site.webmanifest' />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin='anonymous' />
+<link rel='preconnect' href='https://fonts.googleapis.com' crossorigin='anonymous' />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+<link href={`${FONT_PREFIX}:wght@400;700&display=swap`} rel='preload' as='style' />
+<link href={`${FONT_PREFIX}:wght@400;700&display=swap`} rel='stylesheet' />
+<slot />

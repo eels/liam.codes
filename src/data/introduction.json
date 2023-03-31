@@ -1,0 +1,25 @@
+{
+  "content": [
+    {
+      "paragraph": "Experienced full-stack engineer working alongside brands such as The Spectator, The Telegraph and The Wall Street Journal.",
+      "underline": [
+        {
+          "props": {},
+          "target": "The Spectator"
+        },
+        {
+          "props": {},
+          "target": "The Telegraph"
+        },
+        {
+          "props": {},
+          "target": "The Wall Street Journal"
+        }
+      ]
+    },
+    {
+      "paragraph": "I aim to take complex problems and look to solve them with efficient and striking solutions.",
+      "underline": []
+    }
+  ]
+}

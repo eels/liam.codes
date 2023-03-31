@@ -1,0 +1,13 @@
+---
+import * as Classes from './styled';
+
+export interface Props {
+  hasTopPadding?: boolean;
+}
+
+const { hasTopPadding = false } = Astro.props;
+---
+
+<section class:list={Classes.Section({ hasTopPadding })}>
+  <slot />
+</section>
