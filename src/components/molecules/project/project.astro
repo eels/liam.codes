@@ -1,5 +1,6 @@
 ---
 import * as Classes from './styled';
+import ConditionalRender from '@src/components/utilities/conditional-render.astro';
 import UnderlinedText from '@src/components/atoms/underlined-text/underlined-text.astro';
 import { Sprite } from 'astro-icon';
 
@@ -21,10 +22,8 @@ const { description, href, icon, name, source } = Astro.props;
   </h3>
 </div>
 <div class:list={Classes.Description()}>{description}</div>
-{
-  source && (
-    <UnderlinedText class={Classes.SourceLink()} href={source}>
-      View source on Github
-    </UnderlinedText>
-  )
-}
+<ConditionalRender condition={source !== undefined}>
+  <UnderlinedText class:list={Classes.SourceLink()} href={source}>
+    View source on Github
+  </UnderlinedText>
+</ConditionalRender>

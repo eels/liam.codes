@@ -1,9 +1,9 @@
 ---
 import * as Classes from './styled';
 import { isExternalURL } from '@src/utilities/url';
+import type { AstroBuiltinAttributes } from 'astro/dist/@types/astro.d';
 
-export interface Props {
-  class?: string;
+export interface Props extends AstroBuiltinAttributes {
   href?: string;
 }
 
@@ -12,7 +12,7 @@ interface AdditionalLinkProps {
   target?: string;
 }
 
-const { class: className, href } = Astro.props;
+const { 'class:list': classList, href, ...astroAttributes } = Astro.props;
 const additionalLinkProps: AdditionalLinkProps = {};
 
 if (!!href && isExternalURL(href)) {
@@ -24,9 +24,10 @@ const Component = href ? 'a' : 'span';
 ---
 
 <Component
-  class:list={[Classes.Text({ isLink: href !== undefined }), className]}
+  class:list={[Classes.Text({ isLink: href !== undefined }), classList]}
   href={href}
   {...additionalLinkProps}
+  {...astroAttributes}
 >
   <slot />
 </Component>

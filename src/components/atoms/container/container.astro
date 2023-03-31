@@ -1,7 +1,12 @@
 ---
 import * as Classes from './styled';
+import type { AstroBuiltinAttributes } from 'astro/dist/@types/astro.d';
+
+export interface Props extends AstroBuiltinAttributes {}
+
+const { 'class:list': classList, ...astroAttributes } = Astro.props;
 ---
 
-<div class:list={Classes.Container()}>
+<div class:list={[Classes.Container(), classList]} {...astroAttributes}>
   <slot />
 </div>
