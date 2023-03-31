@@ -23,7 +23,8 @@
   ],
   "dependencies": {
     "astro-icon": "0.8.0",
-    "astro": "2.1.8"
+    "astro": "2.1.8",
+    "astrojs-service-worker": "1.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "17.5.1",
