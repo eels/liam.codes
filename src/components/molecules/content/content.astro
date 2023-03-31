@@ -1,0 +1,44 @@
+---
+import * as Classes from './styled';
+import UnderlinedText from '@src/components/atoms/underlined-text/underlined-text.astro';
+import { groupContentValues } from '@src/utilities/group-content-values';
+
+interface Underline {
+  props: Record<string, any>;
+  target: string;
+}
+
+interface Content {
+  paragraph: string;
+  underline: Underline[];
+}
+
+export interface Props {
+  content: Content[];
+}
+
+const { content } = Astro.props;
+---
+
+{
+  content.map(({ paragraph, underline }) => {
+    const columns = groupContentValues(underline);
+    const pattern = new RegExp(`(${columns?.target?.join('|')})`, 'g');
+    const parts = paragraph.split(pattern);
+
+    return (
+      <p class:list={Classes.Paragraph()}>
+        {parts.map((part) => {
+          const isUnderlineTarget = columns?.target?.includes(part);
+          const iterationIndex = columns?.target?.indexOf(part);
+
+          if (isUnderlineTarget === true) {
+            return <UnderlinedText {...columns.props[iterationIndex]}>{part}</UnderlinedText>;
+          } else {
+            return <Fragment>{part}</Fragment>;
+          }
+        })}
+      </p>
+    );
+  })
+}

@@ -1,6 +1,6 @@
-import tailwind from '@astrojs/tailwind';
+import compress from 'astro-compress';
 import type { AstroUserConfig } from 'astro';
 
 export default {
-  integrations: [tailwind()],
+  integrations: [compress()],
 } satisfies AstroUserConfig;

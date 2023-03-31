@@ -1,0 +1,27 @@
+{
+  "content": [
+    {
+      "paragraph": "If you need to chat, feel free to reach out by sending an email, submitting a relevant issue on one of my GitHub repositories, or by connecting with me on LinkedIn.",
+      "underline": [
+        {
+          "props": {
+            "href": "mailto:liam@liam.codes"
+          },
+          "target": "email"
+        },
+        {
+          "props": {
+            "href": "https://github.com/eels"
+          },
+          "target": "GitHub repositories"
+        },
+        {
+          "props": {
+            "href": "https://www.linkedin.com/in/liamdoescode/"
+          },
+          "target": "LinkedIn"
+        }
+      ]
+    }
+  ]
+}

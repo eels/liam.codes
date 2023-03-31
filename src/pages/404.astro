@@ -1,0 +1,23 @@
+---
+import Container from '@src/components/atoms/container/container.astro';
+import Content from '@src/components/molecules/content/content.astro';
+import HTML from '@src/components/layouts/html.astro';
+import Head from '@src/components/utilities/head.astro';
+import Section from '@src/components/atoms/section/section.astro';
+import UnderlinedText from '@src/components/atoms/underlined-text/underlined-text.astro';
+import head from '@src/data/head.json';
+import notfound from '@src/data/not-found.json';
+---
+
+<HTML title='Homepage'>
+  <Head slot='head'>
+    <title>{head.title}</title>
+    <meta name='description' content={head.description} />
+  </Head>
+  <Container>
+    <Section hasTopPadding={true}>
+      <Content content={notfound.content} />
+      <UnderlinedText href={notfound.return.url}>{notfound.return.copy}</UnderlinedText>
+    </Section>
+  </Container>
+</HTML>

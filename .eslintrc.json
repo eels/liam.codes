@@ -5,6 +5,7 @@
     "semistandard",
     "./configs/eslint/base.json",
     "./configs/eslint/import.json",
+    "./configs/eslint/json.json",
     "./configs/eslint/prettier.json",
     "./configs/eslint/sort-destructure-keys.json",
     "./configs/eslint/sort-imports-es6-autofix.json",

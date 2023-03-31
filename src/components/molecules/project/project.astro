@@ -1,0 +1,30 @@
+---
+import * as Classes from './styled';
+import UnderlinedText from '@src/components/atoms/underlined-text/underlined-text.astro';
+import { Sprite } from 'astro-icon';
+
+export interface Props {
+  description: string;
+  href: string;
+  icon: string;
+  name: string;
+  source?: string;
+}
+
+const { description, href, icon, name, source } = Astro.props;
+---
+
+<div class:list={Classes.Header()}>
+  <Sprite class:list='w-10 h-10' name={icon} />
+  <h3 class:list={Classes.Headline()}>
+    <UnderlinedText href={href}>{name}</UnderlinedText>
+  </h3>
+</div>
+<div class:list={Classes.Description()}>{description}</div>
+{
+  source && (
+    <UnderlinedText class={Classes.SourceLink()} href={source}>
+      View source on Github
+    </UnderlinedText>
+  )
+}
