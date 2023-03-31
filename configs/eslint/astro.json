@@ -10,6 +10,7 @@
         "extraFileExtensions": [".astro"]
       },
       "rules": {
+        "astro/prefer-class-list-directive": "error",
         "newline-after-var": "off"
       }
     }
