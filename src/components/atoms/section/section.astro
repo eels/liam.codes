@@ -1,13 +1,14 @@
 ---
 import * as Classes from './styled';
+import type { AstroBuiltinAttributes } from 'astro/dist/@types/astro.d';
 
-export interface Props {
+export interface Props extends AstroBuiltinAttributes {
   hasTopPadding?: boolean;
 }
 
-const { hasTopPadding = false } = Astro.props;
+const { 'class:list': classList, hasTopPadding = false, ...astroAttributes } = Astro.props;
 ---
 
-<section class:list={Classes.Section({ hasTopPadding })}>
+<section class:list={[Classes.Section({ hasTopPadding }), classList]} {...astroAttributes}>
   <slot />
 </section>
