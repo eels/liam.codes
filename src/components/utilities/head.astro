@@ -2,8 +2,6 @@
 export interface Props {
   slot: 'head';
 }
-
-const FONT_PREFIX = 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro';
 ---
 
 <meta content='ie=edge' http-equiv='x-ua-compatible' />
@@ -14,11 +12,8 @@ const FONT_PREFIX = 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro';
 <link href='https://liam.codes' rel='canonical' />
 <link href='/humans.txt' rel='author' type='text/plain' />
 <link href='/site.webmanifest' rel='manifest' />
-<link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect' />
-<link crossorigin='anonymous' href='https://fonts.googleapis.com' rel='preconnect' />
-<link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect' />
-<link href={`${FONT_PREFIX}:wght@400;700&display=swap`} rel='preload' as='style' />
-<link href={`${FONT_PREFIX}:wght@400;700&display=swap`} rel='stylesheet' />
+<link as='font' href='/typeface/source-sans-pro-400.woff2' rel='preload' crossorigin='anonymous' />
+<link as='font' href='/typeface/source-sans-pro-700.woff2' rel='preload' crossorigin='anonymous' />
 <link href='/favicon/16x16.png' rel='icon' sizes='16x16' type='image/png' />
 <link href='/favicon/32x32.png' rel='icon' sizes='32x32' type='image/png' />
 <link href='/favicon/1024x1024.png' rel='apple-touch-icon' sizes='1024x1024' />
