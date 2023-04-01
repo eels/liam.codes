@@ -18,7 +18,7 @@ export const Text = classnames<StyledText>((conditional) => [
   'bg-[length:100%_5px]',
   'md:bg-[length:100%_8px]',
   'bg-gradient-to-r',
-  'from-white/50',
-  'to-white/50',
+  'from-white/40',
+  'to-white/40',
   conditional(LinkTextStyles, ({ isLink }) => isLink),
 ]);
