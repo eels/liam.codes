@@ -18,5 +18,5 @@ export const Container = classnames(() => [
   'from-rose-500',
   'to-rose-400',
   'px-5',
-  'py-5',
+  'md:px-0',
 ]);
