@@ -11,47 +11,23 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
 
-    env:
-      NEXT_PUBLIC_PRIMARY_SITE_URL: 'https://liam.codes'
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Retrieve Yarn Cache Directory
-        id: yarn-cache
-        run: |
-          echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Use Cache
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
-          key: ${{ runner.os }}-${{ steps.workflow-vars.outputs.branch }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-${{ steps.workflow-vars.outputs.branch }}-yarn-
-
-      - name: Install Dependencies
-        run: |
-          yarn install --frozen-lockfile --prefer-offline
+      - name: Setup
+        uses: ./.github/actions/setup-workflow
 
       - name: Build
+        env:
+          NODE_ENV: production
         run: |
           yarn build
-          yarn export
-          touch out/.nojekyll
-          echo "liam.codes" > out/CNAME
+          touch dist/.nojekyll
+          echo "liam.codes" > dist/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./dist
