@@ -2,14 +2,26 @@
 export interface Props {
   slot: 'head';
 }
+
+const canonical = new URL(Astro.url.pathname, Astro.site).toString().replace(/\/+$/, '');
 ---
 
+<meta charset='utf-8' />
 <meta content='ie=edge' http-equiv='x-ua-compatible' />
 <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport' />
 <meta content='index,follow,noimageindex' name='robots' />
 <meta content='Liam Howell' name='application-name' />
+<meta content='Liam Howell' name='apple-mobile-web-app-title' />
+<meta content='yes' name='apple-mobile-web-app-capable' />
+<meta content='default' name='apple-mobile-web-app-status-bar-style' />
 <meta content='#f43f5e' name='theme-color' />
-<link href='https://liam.codes' rel='canonical' />
+<meta content='telephone=no' name='format-detection' />
+<meta content='/social/600x600.png' property='og:image' />
+<meta content='en_GB' property='og:locale' />
+<meta content='Liam Howell' property='og:site_name' />
+<meta content='website' property='og:type' />
+<meta content={canonical} property='og:url' />
+<link href={canonical} rel='canonical' />
 <link href='/humans.txt' rel='author' type='text/plain' />
 <link href='/site.webmanifest' rel='manifest' />
 <link as='font' href='/typeface/source-sans-pro-400.woff2' rel='preload' crossorigin='anonymous' />

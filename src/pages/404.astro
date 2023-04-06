@@ -9,10 +9,12 @@ import head from '@src/data/head.json';
 import notfound from '@src/data/not-found.json';
 ---
 
-<HTML title='Homepage'>
+<HTML>
   <Head slot='head'>
     <title>{head.title}</title>
-    <meta name='description' content={head.description} />
+    <meta content={head.description} name='description' />
+    <meta content={head.description} property='og:description' />
+    <meta content={head.title} property='og:title' />
   </Head>
   <Container>
     <Section hasTopPadding={true}>

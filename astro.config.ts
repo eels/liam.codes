@@ -5,4 +5,6 @@ import type { AstroUserConfig } from 'astro';
 
 export default {
   integrations: [serviceWorker(), critters(), compress()],
+  site: 'https://liam.codes',
+  trailingSlash: 'never',
 } satisfies AstroUserConfig;
