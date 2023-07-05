@@ -1,5 +1,6 @@
-/* TEAM */
+/* --- TEAM ---------------------------------- */
+
 Webmaster: Liam Howell
-Contact: liam [at] liam.codes
 Website: https://liam.codes
+Contact: liam [at] liam.codes
 From: London, England

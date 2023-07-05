@@ -1,24 +1,24 @@
 {
   "content": [
     {
-      "paragraph": "Experienced full-stack engineer working alongside brands such as The Spectator, The Telegraph and The Wall Street Journal.",
+      "paragraph": "Experienced full-stack engineer working alongside brands such as The Wall Street Journal, Good Housekeeping and Micheldever Tyre Services.",
       "underline": [
         {
           "props": {},
-          "target": "The Spectator"
-        },
-        {
-          "props": {},
-          "target": "The Telegraph"
-        },
-        {
-          "props": {},
           "target": "The Wall Street Journal"
+        },
+        {
+          "props": {},
+          "target": "Good Housekeeping"
+        },
+        {
+          "props": {},
+          "target": "Micheldever Tyre Services"
         }
       ]
     },
     {
-      "paragraph": "I aim to take complex problems and look to solve them with efficient and striking solutions.",
+      "paragraph": "I aim to take complex problems and look to solve them with efficient and performant solutions.",
       "underline": []
     }
   ]

@@ -1,12 +1,6 @@
 {
   "items": [
     {
-      "description": "A familiar styled-like API for css-modules in React",
-      "href": "https://github.com/eels/chic-modules",
-      "icon": "sparkles",
-      "name": "Chic Modules"
-    },
-    {
       "description": "Card-based dungeon crawler with monsters, swords and stuff",
       "href": "https://dungeon.liam.codes",
       "icon": "crossed-swords",
@@ -14,23 +8,35 @@
       "source": "https://github.com/eels/dungeon.liam.codes"
     },
     {
-      "description": "Easily remove unused css-module code in Next.js builds",
-      "href": "https://github.com/eels/next-purge-css-modules",
-      "icon": "construction-worker",
-      "name": "next-purge-css-modules"
+      "description": "Abstract your Tailwind CSS class lists into React components",
+      "href": "https://github.com/eels/tailwind-compose",
+      "icon": "crane",
+      "name": "Tailwind Compose"
     },
     {
-      "description": "Visual Studio Code in colours that make me feel okay",
+      "description": "An OTT configurable particle effects plugin for Hyper terminal",
+      "href": "https://github.com/eels/hyper-unlimited-power",
+      "icon": "party-popper",
+      "name": "hyper-unlimited-power"
+    },
+    {
+      "description": "A familiar Styled-like API for css-modules in React",
+      "href": "https://github.com/eels/chic-modules",
+      "icon": "sparkles",
+      "name": "Chic Modules"
+    },
+    {
+      "description": "Visual Studio Code in colours that make me feel at home",
       "href": "https://marketplace.visualstudio.com/items?itemName=eels.vscode-comfort-theme",
       "icon": "couch-lamp",
       "name": "Comfort Theme",
       "source": "https://github.com/eels/vscode-comfort-theme"
     },
     {
-      "description": "An OTT configurable particle effects plugin for Hyper",
-      "href": "https://github.com/eels/hyper-unlimited-power",
-      "icon": "party-popper",
-      "name": "hyper-unlimited-power"
+      "description": "Next.js plugin to remove unused css-module code",
+      "href": "https://github.com/eels/next-purge-css-modules",
+      "icon": "construction-worker",
+      "name": "next-purge-css-modules"
     },
     {
       "description": "Things just the way I like them",
