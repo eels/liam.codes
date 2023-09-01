@@ -1,7 +1,6 @@
 ---
 import '@src/styles/style.css';
 import * as Classes from './styled';
-import { Sprite } from 'astro-icon';
 ---
 
 <!DOCTYPE html>
@@ -11,9 +10,7 @@ import { Sprite } from 'astro-icon';
   </head>
   <body class:list={Classes.Body()}>
     <div class:list={Classes.Container()}>
-      <Sprite.Provider>
-        <slot />
-      </Sprite.Provider>
+      <slot />
     </div>
   </body>
 </html>

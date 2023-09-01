@@ -2,7 +2,7 @@
 import * as Classes from './styled';
 import ConditionalRender from '@src/components/utilities/conditional-render.astro';
 import UnderlinedText from '@src/components/atoms/underlined-text/underlined-text.astro';
-import { Sprite } from 'astro-icon';
+import { Icon } from 'astro-icon/components';
 
 export interface Props {
   description: string;
@@ -16,7 +16,7 @@ const { description, href, icon, name, source } = Astro.props;
 ---
 
 <div class:list={Classes.Header()}>
-  <Sprite class:list='w-10 h-10' name={icon} />
+  <Icon class:list='w-10 h-10' name={icon} />
   <h3 class:list={Classes.Headline()}>
     <UnderlinedText href={href}>{name}</UnderlinedText>
   </h3>
